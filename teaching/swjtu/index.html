@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en-US" class="no-js"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="copyright" content="Copyright (c)2020 Visualization and Computer Graphics. All Rights Reserved." />
+
+		<title>SWJTU : Visualization and Computer Graphics</title>
+<link rel='dns-prefetch' href='https://cdnjs.cloudflare.com/' />
+<link rel='dns-prefetch' href='https://use.typekit.net/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel='stylesheet' id='papercite_css-css'  href='https://vcg.leeds.ac.uk/wp-content/plugins/leeds-wp-papercite/papercite.css' media='all' />
+<link rel='stylesheet' id='tk_typekit-css'  href='https://use.typekit.net/vlw5ilb.css' media='all' />
+<link rel='stylesheet' id='tk_bootstrap-css'  href='https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/dist/theme-default/bootstrap.min.css' media='screen' />
+<link rel='stylesheet' id='tk_toolkit-css'  href='https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/dist/theme-default/toolkit.min.css' media='screen' />
+<link rel='stylesheet' id='tk_toolkit_print-css'  href='https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/dist/theme-default/print.min.css' media='print' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://vcg.leeds.ac.uk/wp-includes/css/dist/block-library/style.min.css' media='all' />
+<link rel='stylesheet' id='toolkit-profiles-css-css'  href='https://vcg.leeds.ac.uk/wp-content/plugins/leeds-wp-profiles/css/toolkit-profiles.css' media='all' />
+<link rel='stylesheet' id='toolkit-shortcode-css-css'  href='https://vcg.leeds.ac.uk/wp-content/plugins/toolkit-shortcodes/css/toolkit-shortcodes.css' media='all' />
+<link rel='stylesheet' id='tk_theme_style-css'  href='https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/style.css' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css'  href='https://vcg.leeds.ac.uk/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script src='https://vcg.leeds.ac.uk/wp-includes/js/jquery/jquery.js' id='jquery-core-js'></script>
+<script src='https://vcg.leeds.ac.uk/wp-content/plugins/leeds-wp-papercite/js/papercite.js' id='papercite-js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' id='modernizr-js'></script>
+<script type='text/javascript' id='__ytprefs__-js-extra'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/vcg.leeds.ac.uk\/wp-admin\/admin-ajax.php","security":"caa92dc38c","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/vcg.leeds.ac.uk\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/vcg.leeds.ac.uk\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs__\"]","epdovol":"1","version":"13.4.1.1","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"never","pause_others":"","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script src='https://vcg.leeds.ac.uk/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js' id='__ytprefs__-js'></script>
+<link rel="https://api.w.org/" href="https://vcg.leeds.ac.uk/wp-json/" /><link rel="alternate" type="application/json" href="https://vcg.leeds.ac.uk/wp-json/wp/v2/pages/572" /><link rel="alternate" type="application/json+oembed" href="https://vcg.leeds.ac.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvcg.leeds.ac.uk%2Fschool-of-computing-wiki%2Fteaching%2Fswjtu%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://vcg.leeds.ac.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvcg.leeds.ac.uk%2Fschool-of-computing-wiki%2Fteaching%2Fswjtu%2F&#038;format=xml" />
+<link sizes="192x192" rel="icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/touch-icon-192x192.png"><link sizes="16x16" rel="icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/favicon.ico"><link sizes="180x180" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-180x180-precomposed.png"><link sizes="152x152" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-152x152-precomposed.png"><link sizes="144x144" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-144x144-precomposed.png"><link sizes="120x120" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-120x120-precomposed.png"><link sizes="114x114" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-114x114-precomposed.png"><link sizes="76x76" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-76x76-precomposed.png"><link sizes="72x72" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-72x72-precomposed.png"><link sizes="16x16" rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/icons/apple-touch-icon-precomposed.png"><link rel="canonical" href="index.html"><link rel="icon" href="https://vcg.leeds.ac.uk/wp-content/uploads/2019/05/cropped-rect4516-4-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://vcg.leeds.ac.uk/wp-content/uploads/2019/05/cropped-rect4516-4-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://vcg.leeds.ac.uk/wp-content/uploads/2019/05/cropped-rect4516-4-180x180.png" />
+<meta name="msapplication-TileImage" content="https://vcg.leeds.ac.uk/wp-content/uploads/2019/05/cropped-rect4516-4-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/* logo */
+
+
+
+.local-header-title a {
+	 background-image: url("https://vcg.leeds.ac.uk/wp-content/plugins/leeds-wp-projects/resources/logo.svg");
+  
+	background-repeat: no-repeat;
+	background-size: 4.0em;
+	
+	background-position: 0px 50%;
+	padding-left: 4.5em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+
+.local-header-title {
+	padding: 15px;
+	padding-left:0px;
+}
+
+/* grey-blue not red */
+.local-header {
+	background-color: #51738c;
+}
+
+@media (max-width: 479px) {
+  .local-header-title a  {
+	background-image: none;
+	padding-left: 0em;
+	}
+}
+
+a {
+	    color: #356a90;
+}
+
+.jadu-cms a {
+		color: #356a90;
+}
+
+.cms a {
+	color: #356a90;
+}
+
+.sm-toggle-search:hover {
+    background: #254a64;
+}
+
+/* hide quicklinks */
+.masthead-links {
+	 display:none;
+}
+
+/* hide breakcrumbs */
+.breadcrumb {
+	  display:none;
+}
+
+/* hide teh share button (the one with google plus) */
+.social-links {
+	  display:none;
+}
+
+/* usual font for news */
+.article p {
+	font-family:freight-sans-pro,sans-serif;
+}
+
+/* remove tk_profile from news */
+.status-publish.hentry .flag-body .heading-related {
+		  display:none;
+}
+
+/*  quit with the borders jadu */
+.jadu-cms a>img   {
+	border:none;
+}
+
+.jadu-cms a>img:hover   {
+	border:none;
+}
+
+
+
+.wp-caption {
+		border:none;
+}
+
+.rule-image {
+	  display:none;
+}
+
+.heading-related {
+	text-align:right;
+}
+		</style>
+			</head>
+	<body class="page-template-default page page-id-572 page-child parent-pageid-545 swjtu">
+						<!-- Google Tag Manager -->
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-WJPZM2T');</script>
+				<!-- End Google Tag Manager -->
+				<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJPZM2T"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+				<!-- End Google Tag Manager (noscript) -->
+				
+		<div class="site-container">
+
+			<nav id="quicklinks" class="quicklinks collapse">
+	<div class="wrapper-relative wrapper-lg">
+		<div class="quicklinks-inner">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<ul class="quicklinks-list">
+						<li class="title">For staff</li>
+						<li><a href="https://www.leeds.ac.uk/forstaff/">For Staff</a></li>
+						<li><a href="https://www.leeds.ac.uk/forstaff/homepage/375/services">Services A-Z</a></li>
+						<li><a href="https://ses.leeds.ac.uk/">Student Education Service</a></li>
+					</ul>
+					<ul class="quicklinks-list">
+						<li class="title">For students</li>
+						<li><a href="https://minerva.leeds.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_206_1">Portal</a></li>
+						<li><a href="https://it.leeds.ac.uk/mobileapps">Mobile app</a></li>
+						<li><a href="https://students.leeds.ac.uk/">For Students</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<ul class="quicklinks-list">
+						<li class="title">Faculties</li>
+						<li><a href="https://ahc.leeds.ac.uk/">Faculty of Arts, Humanities and Cultures</a></li>
+						<li><a href="https://biologicalsciences.leeds.ac.uk/">Faculty of Biological Sciences</a></li>
+						<li><a href="https://business.leeds.ac.uk/">Faculty of Business</a></li>
+						<li><a href="https://eps.leeds.ac.uk/">Faculty of Engineering and Physical Sciences</a></li>
+						<li><a href="https://environment.leeds.ac.uk/">Faculty of Environment</a></li>
+						<li><a href="https://medicinehealth.leeds.ac.uk/">Faculty of Medicine and Health</a></li>
+						<li><a href="https://essl.leeds.ac.uk/">Faculty of Social Sciences</a></li>
+						<li><a href="https://www.llc.leeds.ac.uk/">Lifelong Learning Centre</a></li>
+						<li><a href="https://www.leeds.ac.uk/info/130567/language_centre">Language Centre</a></li>
+
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<ul class="quicklinks-list">
+						<li class="title">Other</li>
+						<li><a href="https://www.leeds.ac.uk/staffaz">Staff A-Z</a></li>
+						<li><a href="https://www.leeds.ac.uk/campusmap">Campus map</a></li>
+						<li><a href="https://www.leeds.ac.uk/jobs">Jobs</a></li>
+						<li><a href="https://alumni.leeds.ac.uk/">Alumni</a></li>
+						<li><a href="https://www.leeds.ac.uk/contact">Contacts</a></li>
+						<li><a href="https://library.leeds.ac.uk/">Library</a></li>
+						<li><a href="https://it.leeds.ac.uk/">IT</a></li>
+						<li><a href="https://video.leeds.ac.uk/">VideoLeeds</a></li>
+						<li><a href="https://www.luu.org.uk/">Leeds University Union</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<ul class="quicklinks-list">
+						<li class="title">Follow us</li>
+						<li><a href="https://www.facebook.com/universityofleeds">Facebook</a></li>
+						<li><a href="https://www.twitter.com/universityleeds">Twitter</a></li>
+						<li><a href="https://www.youtube.com/universityofleeds">YouTube</a></li>
+						<li><a href="https://www.linkedin.com/edu/university-of-leeds-12706">LinkedIn</a></li>
+						<li><a href="https://instagram.com/universityofleeds/">Instagram</a></li>
+						<li><a href="https://medium.com/university-of-leeds">Medium</a></li>
+						<li><a href="https://www.weibo.com/leedsuniversityuk">Weibo</a></li>
+						<li><a href="https://theconversation.com/institutions/university-of-leeds-1122">The Conversation</a></li>
+						<li><a href="https://www.leeds.ac.uk/rss/news">RSS news feed</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="quicklinks-close">
+			<button class="icon-font btn-icon js-quicklinks-close" data-toggle="collapse" data-target="#quicklinks">
+				<span class="tk-icon-close" aria-hidden="true"></span>
+				<span class="icon-font-text">Close University links</span>
+			</button>
+		</div>
+	</div>
+</nav><header class="masthead">
+	<div class="wrapper-lg">
+		<!-- Open button -->
+		<div class="masthead-links">
+			<button class="masthead-link masthead-link-quicklinks js-quicklinks-toggle" data-toggle="collapse" data-target="#quicklinks" aria-label="Open University Links menu">University Links</button>
+		</div>
+		<div class="navicon">
+			<button class="btn-icon" data-state="body-state" data-class="state-navicon-active">Menu</button>
+		</div>
+		<div class="site-logo">
+			<a href="https://www.leeds.ac.uk/" title="University of Leeds homepage"><img src="https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/img/logo.png" alt="University of Leeds logo"></a>
+		</div>
+	</div>
+</header>
+<div id="sitesearch" class="site-search collapse">
+	<div class="wrapper-pd wrapper-lg">
+		<form id="header_form" class="site-search-inner" autocomplete="off" method="get" action="https://vcg.leeds.ac.uk" role="search">
+			<label class="sr-only" for="searchInput">Search</label>
+			<input id="searchInput" class="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off">
+			<label class="sr-only" for="searchOption">Destination</label>
+			<select id="searchOption" class="site-search-select js-action-toggle" name="searchOption">
+				<option value="searchSite" selected data-action="https://vcg.leeds.ac.uk">Visualization and Computer Graphics site</option>
+				<option value="searchAll" data-action="http://www.leeds.ac.uk/site/scripts/search_results.php">All leeds.ac.uk sites</option>
+			</select>
+			<input class="site-search-submit btn btn-primary" type="submit" value="Search">
+		</form>
+	</div>
+</div>
+<div class="local-header">
+	<div class="wrapper-pd-xs wrapper-lg">
+		<div class="local-header-inner">
+			<div class="local-header-title" role="navigation" aria-label="Home page link">
+				<a href="https://vcg.leeds.ac.uk">Visualization and Computer Graphics</a>
+			</div>
+			<div class="local-header-search">
+				<button class="icon-font sm-toggle-search btn-icon js-site-search-toggle" data-toggle="collapse" data-target="#sitesearch" aria-label="Open site search">
+					<span class="site-search-btn" aria-hidden="true"></span>
+					<span class="icon-font-text">Search</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<nav class="tk-nav tk-nav-priority">
+	<div class="wrapper-relative wrapper-lg">
+		<div class="tk-nav-header">
+			<button class="btn-icon" data-state="body-state" data-class="state-navicon-active">Close</button>
+		</div>
+		<div class="tk-nav-inner">
+			<ul class="tk-nav-list tk-nav-list-primary"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-11"><a href="https://vcg.leeds.ac.uk/">Home</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-post_type_archive menu-item-object-tk_profiles menu-item-14"><a href="https://vcg.leeds.ac.uk/profiles/">People</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96"><a href="https://vcg.leeds.ac.uk/news/">News</a></li>
+<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children tk-nav-dropdown dropdown menu-item-105"><a href="https://vcg.leeds.ac.uk/research/">Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="https://vcg.leeds.ac.uk/research/publications/">Publications</a></li>
+	<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://vcg.leeds.ac.uk/research/research-areas/">Research Areas</a></li>
+	<li id="menu-item-73" class="menu-item menu-item-type-post_type_archive menu-item-object-projects menu-item-73"><a href="https://vcg.leeds.ac.uk/projects/">Research Projects</a></li>
+	<li id="menu-item-615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-615"><a href="https://vcg.leeds.ac.uk/phd-opportunities/">PhD Opportunities</a></li>
+	<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://vcg.leeds.ac.uk/research/student-projects/">Student Projects</a></li>
+	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297"><a href="https://vcg.leeds.ac.uk/research/">Partners &#038; Grants</a></li>
+</ul>
+</li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://vcg.leeds.ac.uk/contact/">Contact</a></li>
+</ul>		</div>
+	</div>
+</nav>
+
+			<div class="main wrapper-lg">
+<div class="wrapper-pd-xs"><ul id="breadcrumb" class="breadcrumb"><li class="item-home"><a class="bread-link bread-home" href="https://vcg.leeds.ac.uk" title="Home">Home</a></li><li class="item-parent item-parent-544"><a class="bread-parent bread-parent-544" href="../../index.html" title="unofficial School of Computing wiki">unofficial School of Computing wiki</a></li><li class="item-parent item-parent-545"><a class="bread-parent bread-parent-545" href="../../teaching.html" title="Teaching">Teaching</a></li><li class="item-current item-572"><strong title="SWJTU"> SWJTU</strong></li></ul></div>	<div class="column-container">
+	
+<aside class="column-container-secondary">
+	
+	<div class="sidebar" role="complementary">
+		<div class="sidebar-widget">
+			<div class="widget-section">
+				<button class="sidebar-button js-widget-toggle">In this section: unofficial School of Computing wiki</button>
+				<h4 class="sidebar-heading heading-related">In this section</h4>
+
+				<ul class="sidebar-nav" id="sidebarNav">
+
+					<li><a href="../../index.html">Overview</a></li><li class="page_item page-item-554"><a href="../../leeds-it/index.html">IT</a></li>
+<li class="page_item page-item-548 dropdown"><a href="../../miscandadmin/index.html">Misc and Admin</a>
+<ul class='children'><li><a href="../../miscandadmin/index.html">Overview</a></li>
+	<li class="page_item page-item-593"><a href="../../miscandadmin/expenses-mais/index.html">expenses / mais</a></li>
+	<li class="page_item page-item-563"><a href="../../fte/index.html">FTE</a></li>
+	<li class="page_item page-item-709"><a href="../../miscandadmin/smt/index.html">SMT</a></li>
+</ul>
+</li>
+<li class="page_item page-item-552"><a href="../../cs-research/index.html">Research</a></li>
+<li class="page_item page-item-545 dropdown"><a href="../../teaching.html">Teaching</a>
+<ul class='children'><li><a href="../../teaching.html">Overview</a></li>
+	<li class="page_item page-item-676"><a href="../annual-software-request-cycle/index.html">annual software request cycle</a></li>
+	<li class="page_item page-item-557"><a href="../../assessment-prep/index.html">assessment prep</a></li>
+	<li class="page_item page-item-587"><a href="../exam-season/index.html">exam season</a></li>
+	<li class="page_item page-item-564"><a href="../../library-reading-lists/index.html">library reading lists</a></li>
+	<li class="page_item page-item-584"><a href="../module-changes-email.html">module changes email</a></li>
+	<li class="page_item page-item-572 active"><a href="index.html">SWJTU</a></li>
+	<li class="page_item page-item-559"><a href="../../third-year-report/index.html">third year report</a></li>
+	<li class="page_item page-item-565"><a href="../../timetabling-information-request/index.html">timetabling information requests</a></li>
+	<li class="page_item page-item-570 dropdown"><a href="../tutees/index.html">tutorials at Leeds</a>
+	<ul class='children'><li><a href="../tutees/index.html">Overview</a></li>
+		<li class="page_item page-item-549"><a href="../tutees/personal-tutor-toolkit/index.html">personal tutor toolkit</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-625"><a href="../minerva/index.html">wrangling Minerva and SIS</a></li>
+</ul>
+</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="sidebar-widget">
+					</div>
+
+	</div>
+	</aside>
+	<div class="column-container-primary">
+		<header class="wrapper-padded wrapper-sm">
+			 
+			<h1 class="heading-underline">SWJTU</h1>
+					</header>
+				
+		<div id="post-572" class="wrapper-sm wrapper-pd post-572 page type-page status-publish hentry">
+
+					<div class="jadu-cms">
+				<p>SWJTU <a href="https://minerva.leeds.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_423667_1&amp;content_id=_3874320_1">organisation in <strong>Minerva</strong></a>. Request permission <a href="https://vcg.leeds.ac.uk/school-of-computing-wiki/teaching/swjtu/swjtu@leeds.ac.uk">here</a>. <a href="https://minerva.leeds.ac.uk/webapps/blackboard/execute/announcement?method=search&amp;context=course&amp;course_id=_460347_1&amp;handle=cp_announcements&amp;mode=cpview">Staff page</a>. On a <a href="https://www.bing.com/maps?cp=30.764191~103.986398&amp;lvl=17&amp;q=Southwest%20Jiaotong%20University%20School%20of%20Mathematics&amp;ypid=4067x12574948009221273673">map</a>. Building 9.  Log into Minerva, so the links on this page work. Introductory <a href="https://minerva.leeds.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_4667798_1&amp;course_id=_460347_1&amp;mode=reset">material</a> (in particular the handbook).</p>
+<p><strong>Network.</strong> Generally net is &#8220;different&#8221;&#8230;</p>
+<ul>
+<li>Skype/encrypted tunnels are dropped after 20 minutes in the hotel</li>
+<li>Latency to Leeds is huge &#8211; using Leeds hosted sites will be frustrating</li>
+<li>VPNs are widespread&#8230;
+<ul>
+<li>&#8230;but technically illegal.</li>
+<li>Students use them to access resources (google etc&#8230;) regularly</li>
+<li>install one before you head out</li>
+<li>Leeds&#8217; VPN doesn&#8217;t offer access to much (e.g. BBC, guardian etc&#8230; won&#8217;t work.)</li>
+<li>Set up a <a href="https://www.howtogeek.com/293213/how-to-configure-a-proxy-server-in-firefox/">SOCKS proxy</a>, (Windows: use <a href="https://www.putty.org/">putty</a> and the <span style="font-weight: 400;"><em>remote-access.leeds.ac.uk</em> server, in settings go <em>connection -&gt; SSH -&gt;Tunnels  </em>and write &#8220;D9090&#8221; in the <em>Forwarded Ports</em> field.)</span></li>
+</ul>
+</li>
+<li>Google is blocked.
+<ul>
+<li>Android phones have trouble: Play Store, Docs, Google Maps, URL auto-complete doesn&#8217;t work etc&#8230;</li>
+<li>Use <a href="http://bing.com">bing.com</a></li>
+<li>YouTube won&#8217;t work &#8211; <a href="https://en.savefrom.net/1-how-to-download-youtube-video/">download videos</a> before you fly.</li>
+</ul>
+</li>
+<li>You can download offline maps before you fly. Something that uses openstreetmap data like <a href="https://maps.me/en/download/">maps.me</a>. Don&#8217;t forget to download the maps too.</li>
+<li>There is no internet on campus. Or, rather, during work hours the bandwidth is so limited that you have to go back to the hotel to use Skype. Consider this when planning lessons.
+<ul>
+<li>Students will use phones on campus to retrieve content from Minerva etc&#8230; for labs. Getting this information to the lab machines is a challenge.</li>
+</ul>
+</li>
+<li>Phones. Mine didn&#8217;t work. Apparently you can buy a SIM card at the airport and have Leeds reimburse. Someone was telling me there is a card that gives good access you can buy in Europe&#8230;?</li>
+<li>Whatsapp text messages worked, but it wouldn&#8217;t show images or make calls</li>
+<li>There was some effort to coordinate between lecturers on WeChat.
+<ul>
+<li>On android you should install WeChat before you fly.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Getting to campus</strong>.</p>
+<ul>
+<li>I prefer the metro &#8211; buy a travel card from the station. Less that 2RMB for the 3 stops (Baicao Rd to Xipu) to campus. Bilingual signage. About 45 mins door-to-door if you walk fast. There&#8217;s a Starbucks on the walk from the metro to the campus. Otherwise coffee is pretty terrible.</li>
+<li>Taxi can be organised from the from the front desk for ~50RMB: good for 8am lectures.</li>
+<li>Bus 311 goes from nearer the hotel (less walking), uses the same travel card as the metro, and is detailed in the handbook. Bus stop is <a href="https://binged.it/2O52Y6n">far side of Xixin Blvd</a> from hotel. But it&#8217;s prone to showing up late and detouring around all the building work.</li>
+</ul>
+<p>Generally the standard of <strong>English</strong> is below <em>Continental-European-English-as-a-second-language</em> levels. Speaking and listening can be as bad as about a 10-year old native.</p>
+<ul>
+<li>it takes about a week of lecturing before students are comfortable enough to talk with you &#8211; at this point you will figure out what the retention is.</li>
+<li>after this week, many lecturers have reported that oral retention from lectures is poor &#8211; they prefer to spend hours in self-study from written materials</li>
+<li>provide copious written study material.</li>
+<li>talk slowly and clearly. repeat key points with alternative vocabulary.</li>
+<li>crowd participation is considered unusual at Chinese unis, but they get used to it after a few Leeds lecturers have passed through. Don&#8217;t say &#8220;put your hand up if X&#8221;, but &#8220;everyone put your hand up. &lt;wait&gt; Put it down if X&#8221;.</li>
+<li>there&#8217;s no video recording (I have no idea where the video cameras in the lecture theaters go&#8230;)</li>
+<li>they will find  a Mandarin version of any textbook you suggest and study that. Much of the material when Leeds staff is not around is taught (i.e. Co-Lecturer interactions) in Mandarin or a bad-english-echo-chamber.</li>
+</ul>
+<p><strong>Co-Lecturer.</strong> The module co-lecturer is responsible for grading assignments and exams and running additional labs etc&#8230; once you&#8217;ve left. You should check 10% of the grades for both coursework and exams before releasing the grades to students. Check that the co-lecturer understands the UK marking conventions (i.e. grades usually distributed in 40-80%).</p>
+<p><strong>WeChat</strong> group. The year has a WeChat group and exchange copious materials. (Similar to Leeds&#8217; student&#8217;s WhatsApp groups, but with everyone (except you)). Mandarin. Resources, clarifications and rumor spread through this. Co-lecturer is usually in the group too. This is the student&#8217;s preferred source of information (over Minerva, oral material in lectures, and what you write on the whiteboard in lab). Can be problematic when, e.g. material from last year is posted.</p>
+<p><strong>Minerva</strong> has significantly improved since IT switched to cloud-hosting. Watch out for the time of submissions &#8211; all times are in UK rather than local time&#8230;</p>
+<p><strong>Office.</strong> An office on the SWJTU corridor is shared with up to 6 other Leeds lecturers. Generally you&#8217;ll want to use a meeting room to talk to groups of students.</p>
+<p><strong>Labs</strong>. The students don&#8217;t like using the (Computing) lab computers. Installing a particular tool chain was challenging. To install software in the lab, the TA goes to each machine in turn. There are no login accounts &#8211; so people can see the previous user&#8217;s (course)work. <a href="https://leeds365-my.sharepoint.com/:v:/g/personal/scstke_leeds_ac_uk/Eeh7CAJzoDBEqVTYVoHZ2uIBOCIMRCHNP1n-gzoACJUjmA?e=HzAfsd">Lab machine video</a>.</p>
+<p>&#8230;Expect them to work on their <strong>own laptops</strong>. These are mainly Windows, ~20% OSX and the occasional Linux install. Remember their laptops (and all the software) will be in Mandarin so helping over their shoulders takes some getting used to. Take hand sanitizer.</p>
+<p><strong>Calendar.</strong> See who is out there by searching for &#8220;SWJTU-Leeds&#8221; in Leeds&#8217; Outlook calendar. Easier than trying to play spot-the-lecturer over hotel breakfast.</p>
+<p><strong>Shops.</strong> Opposite the hotel there&#8217;s a street with lots of restaurants. Further down is &#8220;little America&#8221; with a <a href="https://www.bing.com/maps?cp=30.722052~103.979185&amp;lvl=19&amp;q=Walmart%20Shuxi%20Road%20Branch&amp;ypid=4067x2644704788269878221">wallmart</a>, mcdonalds, and starbucks.</p>
+<p><strong>Hotel.</strong> (<a href="https://www.bing.com/maps?cp=30.728521~103.972971&amp;lvl=19&amp;q=Crowne%20Plaza%20Chengdu%20West&amp;segment=hotel&amp;ypid=4067x18071312477167648770">map</a>) Default is the <a href="https://www.google.co.uk/maps/@30.727038,103.9798715,16.08z">Holiday Inn</a>.</p>
+<ul>
+<li>Nice rooms, big TV, room service is mostly expensible.</li>
+<li>Ask for a room at the back of the building &#8211; you get a balcony (with a door so you can cool the room), no street noise (construction traffic is scheduled for about 2am), and a view of the mountains (on a the one smog-free day).</li>
+<li>Buffet breakfast is included and a reasonable approximation of most western breakfasts can be found.</li>
+<li>Even if the room is paid for by Leeds, expect to leave a 1000RMB deposit on <em>your own credit card</em> when checking in, then they will request addition deposits as your bill crosses this limit.</li>
+<li><a href="https://www.gla.ac.uk/schools/engineering/international%20partnerships/uestc/">Glasgow</a> are in the Crowne next door.</li>
+<li>Leeds does rent apartments in town for longer term staff.</li>
+<li>Crowne and Holiday Inn share a gym and restaurant &#8211; there is shorter route to the bus/metro through the Crowne lobby.</li>
+</ul>
+<p><strong>Flight.</strong> Tends to be KLM from Leeds, changing at Amsterdam. Uni will pay for &#8220;Comfort Economy&#8221; upgrade. Leeds will also book the posh transfers with the Holiday Inn if you ask.</p>
+<p><strong>Timetable.</strong> Some dates <a href="https://minerva.leeds.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_423667_1&amp;content_id=_4535078_1&amp;mode=reset">here</a>. I have no idea how to find SWJTU&#8217;s teaching timetable except by emailing their staff?</p>
+<p><strong>Air pollution.</strong> Some staff have reported the pollution in the city affecting their health. Summer is <a href="https://www.travelchinaguide.com/climate/chengdu.htm">better than</a> Winter. Particulate have been advised and will be reimbursed &#8211; I didn&#8217;t feel it was any worse that cycling through London. They leave the windows open in the university teaching space, so you will lecture through polluted air in the Summer.</p>
+<p><strong>SWJTU</strong> stands for Southwest Jiaotong University. <span style="text-decoration: underline;"><em>Jiaotong</em></span> means transport &#8211; they do a lot of trains.</p>
+<p><strong>Air conditioning.</strong> Chengdu is generally warmer than Leeds. There is air conditioning, but not super/&#8221;American&#8221; grade (it won&#8217;t run in the winter in the hotel or campus; in Summer hotel is nice and cool, on campus they run AC but leave the windows open). I was sweating the whole time in Summer; then I was chased around the hotel by a guy with a laser thermometer after I got a bit sweaty in the gym&#8230;</p>
+<p>The students there do a <strong>foundation year</strong>, so there is a convention of saying that <em>year</em> 1 (Leeds) is <em>level</em> 2 (SWJTU) etc&#8230;</p>
+					
+			</div>
+		
+		</div>					
+
+		<!-- page-sidebar-bottom -->
+</div></div><!-- #page-sidebar-bottom -->			</div>
+			<!-- /.main-->				
+
+
+			
+						<footer class="site-footer">
+
+				
+				
+				<div class="site-footer-lower">
+					<div class="wrapper-pd wrapper-lg">
+
+						<ul class="nav pull-left">
+							<li>&copy; 2020 University of Leeds, Leeds, LS2 9JT</li>
+							<li><a href="http://www.leeds.ac.uk/info/5000/about/238/terms_and_conditions">Terms and conditions</a></li>
+						</ul>
+						<ul class="nav"><li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="https://vcg.leeds.ac.uk/privacy-and-cookies/">Privacy and Cookies</a></li>
+</ul>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
+
+		<script src='https://vcg.leeds.ac.uk/wp-content/plugins/toolkit-shortcodes/js/toolkit-shortcodes.js' id='toolkit-shortcode-js-js'></script>
+<script src='https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/js/toolkit-wordpress.js' id='tk_wordpress-js'></script>
+<script src='https://vcg.leeds.ac.uk/wp-content/themes/toolkit-wordpress-theme/dist/script.min.js' id='tk_scripts-js'></script>
+<script src='https://vcg.leeds.ac.uk/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js' id='__ytprefsfitvids__-js'></script>
+<script src='https://vcg.leeds.ac.uk/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script type='text/javascript' id='statify-js-js-extra'>
+/* <![CDATA[ */
+var statify_ajax = {"url":"https:\/\/vcg.leeds.ac.uk\/wp-admin\/admin-ajax.php","nonce":"a37ab7f6d6"};
+/* ]]> */
+</script>
+<script src='https://vcg.leeds.ac.uk/wp-content/plugins/statify/js/snippet.min.js' id='statify-js-js'></script>
+			
+
+	</body>
+</html>
